@@ -8,7 +8,7 @@ export const metadata = {
     description: "The Bodhi Central repository for guidelines, documentation, and technical information about the Bodhi Central project.",
 }
 
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
+const banner = <Banner storageKey="bodhi-central-1.0-in-development"><a href="https://bodhi-central.vercel.app">Bodhi Central 1.0 is in development 🎉</a></Banner>
 const navbar = (
     <Navbar
         logo={<b>Bodhi Central</b>}
