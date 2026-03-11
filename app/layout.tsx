@@ -4,8 +4,8 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 
 export const metadata = {
-    title: "Bodhi Central — Documentation",
-    description: "The Bodhi Central repository of guidelines, documentation, and platform technical information.",
+    title: "Bodhi Central Documentation",
+    description: "The Bodhi Central repository for guidelines, documentation, and technical information about the Bodhi Central project.",
 }
 
 const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
