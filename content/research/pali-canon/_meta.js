@@ -1,4 +1,5 @@
 export default {
   "sutta-numbering-system": "Sutta Numbering System",
-  "connections-and-parallels": "Connections and Parallels"
+  "connections-and-parallels": "Connections and Parallels",
+  "textual-information-tags": "Textual Information Tags"
 }

@@ -1,0 +1,166 @@
+import { Cards,Table } from 'nextra/components'
+import Link from 'next/link'
+
+## Text-critical Information
+
+Source: SuttaCentral (compiled by Bodhi Docs)
+
+Our original-language texts include a range of text-critical information of interest to scholars. At SuttaCentral, we try to present this in a way that will not be intrusive to readers, but is informative when researching. Traditional digital files often use print-based conventions such as [brackets] to indicate such matter. But this is ugly, interrupting the reading flow. Worse, it’s uninformative. It is often hard to find out exactly what these various marks mean; in fact we have sometimes had to resort to educated guesswork.
+
+Text-critical information is marked in the files with classes such as “var” for variant readings, “supplied” for supplied text, and so on. Typically we indicate this visually with styles, and display a tooltip explaining the meaning. Most of this may be activated optionally.
+
+### Textual Information Tags
+
+When the class matches the TEI standard, we provide a link to the <Link href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-class.html">specification page</Link> for the tag.
+
+<Table style={{ marginTop: '2rem' }}>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Class</Table.Th>
+      <Table.Th>Definition</Table.Th>
+      <Table.Th>Normal style</Table.Th>
+      <Table.Th>TI style</Table.Th>
+      <Table.Th>Example</Table.Th>
+
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>.term</Table.Td>
+      <Table.Td>contains a single-word, multi-word, or symbolic designation which is regarded as a technical term</Table.Td>
+      <Table.Td>Bold</Table.Td>
+      <Table.Td>Bold primary-accent-color</Table.Td>
+      <Table.Td><b>Example</b></Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>.gloss</Table.Td>
+      <Table.Td>identifies a phrase or word used to provide a gloss or definition for some other word or phrase</Table.Td>
+      <Table.Td>none</Table.Td>
+      <Table.Td>primary-accent-color</Table.Td>
+      <Table.Td>Example</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>.supplied</Table.Td>
+      <Table.Td>signifies text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe.</Table.Td>
+      <Table.Td>none</Table.Td>
+      <Table.Td>primary-color</Table.Td>
+      <Table.Td>Example</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>.supplied2</Table.Td>
+      <Table.Td>signifies text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe.</Table.Td>
+      <Table.Td>none</Table.Td>
+      <Table.Td>primary-color-dark</Table.Td>
+      <Table.Td>Example</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>.cr</Table.Td>
+      <Table.Td>(cross-reference phrase) contains a phrase, sentence, or icon referring the reader to some other location in this or another text</Table.Td>
+      <Table.Td>normal a-style</Table.Td>
+      <Table.Td></Table.Td>
+      <Table.Td><Link href="">PTS CS 1.1</Link></Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>.add</Table.Td>
+      <Table.Td>contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector.</Table.Td>
+      <Table.Td>none but TI style on root texts + english</Table.Td>
+      <Table.Td>Sans secondary-text-color</Table.Td>
+      <Table.Td>Example</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+        <Table.Tr>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+      <Table.Td>......</Table.Td>
+    </Table.Tr>
+
+
+  </tbody>
+</Table>
+
+## Only used on div
+
+Some classes are only used on divs and appear in between normal text. Examples are given below:
+
+### bodhi-info
+
+<div style={{ marginTop: '1rem', padding: '1rem', border: '1px solid #ccc', borderRadius: '0.5rem', backgroundColor: '#f5f5f5', color: '#333' }} className="bodhi-info">
+“Ananda, heb jij gehoord, dat zij de ouderen onder hen eren, respecteren, eerbiedigen en begroeten, en dat zij hen waardig achten door naar hen te luisteren?”—“Heer, ik heb gehoord dat zij dat zo doen.”—“Ananda, zolang de Vajji’s (...) dan mag van hen worden verwacht dat zij welvarend zullen zijn en niet ten gronde zullen gaan.”
+</div>
+
+### colophon
+
+<div className="colophon">
+“Ananda, heb jij gehoord, dat zij de ouderen onder hen eren, respecteren, eerbiedigen en begroeten, en dat zij hen waardig achten door naar hen te luisteren?”—“Heer, ik heb gehoord dat zij dat zo doen.”—“Ananda, zolang de Vajji’s (...) dan mag van hen worden verwacht dat zij welvarend zullen zijn en niet ten gronde zullen gaan.”
+</div>

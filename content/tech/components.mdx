@@ -1,0 +1,203 @@
+import { Bleed, Callout, Cards, FileTree, Steps, Table, Tabs } from 'nextra/components'
+
+# Nextra Built-In Components
+
+This page serves as a live demonstration of the built-in React components provided by Nextra 4. To use these in any `.mdx` file, simply import them from `'nextra/components'`.
+
+---
+
+## Callout
+
+The `<Callout>` component is used to highlight information such as hints, warnings, or errors.
+
+```tsx
+import { Callout } from 'nextra/components'
+
+<Callout type="info">This is an informational callout.</Callout>
+<Callout type="warning">This is a warning callout.</Callout>
+<Callout type="error">This is an error callout.</Callout>
+```
+
+**Live Preview:**
+
+<Callout type="info">This is an informational callout.</Callout>
+<Callout type="warning">This is a warning callout.</Callout>
+<Callout type="error">This is an error callout.</Callout>
+
+---
+
+## Steps
+
+The `<Steps>` component visually transforms numbered or consecutive headings into a step-by-step list.
+
+```tsx
+import { Steps } from 'nextra/components'
+
+<Steps>
+### Step 1
+First, do this.
+### Step 2
+Then, do that.
+</Steps>
+```
+
+**Live Preview:**
+
+<Steps>
+### Step 1
+First, do this.
+### Step 2
+Then, do that.
+</Steps>
+
+---
+
+## Tabs
+
+The `<Tabs>` component displays content separated by interactive tabs.
+
+```tsx
+import { Tabs } from 'nextra/components'
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tabs.Tab>pnpm i react</Tabs.Tab>
+  <Tabs.Tab>npm i react</Tabs.Tab>
+  <Tabs.Tab>yarn add react</Tabs.Tab>
+</Tabs>
+```
+
+**Live Preview:**
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tabs.Tab>pnpm i react</Tabs.Tab>
+  <Tabs.Tab>npm i react</Tabs.Tab>
+  <Tabs.Tab>yarn add react</Tabs.Tab>
+</Tabs>
+
+---
+
+## Cards
+
+The `<Cards>` component is ideal for organizing navigation links graphically as a grid of cards.
+
+```tsx
+import { Cards } from 'nextra/components'
+
+<Cards>
+  <Cards.Card title="Documentation" href="/documentation/introduction" />
+  <Cards.Card title="Research" href="/research/introduction" />
+</Cards>
+```
+
+**Live Preview:**
+
+<Cards>
+  <Cards.Card title="Documentation" href="/documentation/introduction" />
+  <Cards.Card title="Research" href="/research/introduction" />
+</Cards>
+
+---
+
+## FileTree
+
+The `<FileTree>` component visually represents a directory and file structure.
+
+```tsx
+import { FileTree } from 'nextra/components'
+
+<FileTree>
+  <FileTree.Folder name="content" defaultOpen>
+    <FileTree.Folder name="tech">
+      <FileTree.File name="_meta.js" />
+      <FileTree.File name="components.mdx" />
+      <FileTree.File name="introduction.mdx" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+```
+
+**Live Preview:**
+
+<FileTree>
+  <FileTree.Folder name="content" defaultOpen>
+    <FileTree.Folder name="tech" defaultOpen>
+      <FileTree.File name="_meta.js" />
+      <FileTree.File name="components.mdx" />
+      <FileTree.File name="introduction.mdx" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+---
+
+## Table
+
+The `<Table>` component renders semantic HTML tables with Nextra's styling. Note: standard Markdown tables (`| Col 1 | Col 2 |`) format automatically, but `<Table>` provides full flexibility if you need to use specific attributes.
+
+```tsx
+import { Table } from 'nextra/components'
+
+<Table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Callout</td>
+      <td>Highlights important text</td>
+    </tr>
+    <tr>
+      <td>Bleed</td>
+      <td>Expands content past container width</td>
+    </tr>
+  </tbody>
+</Table>
+```
+
+**Live Preview:**
+
+<Table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Callout</td>
+      <td>Highlights important text</td>
+    </tr>
+    <tr>
+      <td>Bleed</td>
+      <td>Expands content past container width</td>
+    </tr>
+  </tbody>
+</Table>
+
+---
+
+## Bleed
+
+The `<Bleed>` component expands its child content wider than the default page container. This is useful for wide images or tables that need more space to look good without shrinking.
+
+```tsx
+import { Bleed } from 'nextra/components'
+
+<Bleed>
+  <div style={{ border: '1px solid gray', padding: '1rem', textAlign: 'center' }}>
+    I am extending past the normal margins of this page! (Check below to see this rendered live)
+  </div>
+</Bleed>
+```
+
+**Live Preview:**
+
+<Bleed>
+  <div style={{ border: '1px solid gray', padding: '1rem', textAlign: 'center', backgroundColor: '#f5f5f5', color: 'black' }}>
+    <b>Wide Content Box</b><br/>I am extending past the normal margins of this page!
+  </div>
+</Bleed>
