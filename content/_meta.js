@@ -1,22 +1,22 @@
 export default {
-  "index": {
-    "title": "Introduction",
+  "documentation": {
+    "title": "Documentation",
     "type": "page"
   },
-  "platform-pillars": {
-    "title": "Platform Pillars",
+  "research": {
+    "title": "Research",
     "type": "page"
   },
-  "development": {
-    "title": "Development",
+  "tech": {
+    "title": "Tech",
     "type": "page"
   },
-  "data-management": {
-    "title": "Data Management",
+  "platform": {
+    "title": "Platform",
     "type": "page"
   },
-  "pali-canon-guides": {
-    "title": "Pali Canon Guides",
+  "about": {
+    "title": "About",
     "type": "page"
   }
 }
