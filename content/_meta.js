@@ -11,10 +11,6 @@ export default {
     "title": "Tech",
     "type": "page"
   },
-  "platform": {
-    "title": "Platform",
-    "type": "page"
-  },
   "about": {
     "title": "About",
     "type": "page"

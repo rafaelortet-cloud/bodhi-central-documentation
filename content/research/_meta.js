@@ -1,13 +1,14 @@
 export default {
-  "introduction": "Introduction to Research",
+  "introduction": "RESEARCH",
   "---": {
     "type": "separator",
     "title": "Canon Research"
   },
   "pali-canon": "Pali Canon",
   "tibetan-canon": "Tibetan Canon",
-  "separator-user-research": {
+  "separator-audience-segments": {
     "type": "separator",
     "title": "Audience & Segments"
-  }
+  },
+  "user-research": "User Research",
 }
