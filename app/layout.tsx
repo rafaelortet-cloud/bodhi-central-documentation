@@ -8,14 +8,14 @@ export const metadata = {
     description: "The Bodhi Central repository for guidelines, documentation, and technical information about the Bodhi Central project.",
 }
 
-const banner = <Banner storageKey="bodhi-central-1.0-in-development"><a href="https://bodhi-central.vercel.app">Bodhi Central 1.0 is in development 🎉</a></Banner>
+const banner = <Banner color="white" storageKey="bodhi-central-1.0-in-development"><a href="https://bodhi-central.vercel.app" target="_blank">Bodhi Central 1.0 is in development 🎉</a></Banner>
 const navbar = (
     <Navbar
         logo={<img style={{ width: '10rem' }} src="/bodhi-central-logo-social.png" alt="Bodhi Central logo" />}
     // ... Your additional navbar options
     />
 )
-const footer = <Footer>Bodhi Central {new Date().getFullYear()} © All rights reserved.</Footer>
+const footer = <Footer>Bodhi Central Docs {new Date().getFullYear()} © All rights reserved.</Footer>
 
 export default async function RootLayout({ children }) {
     return (
