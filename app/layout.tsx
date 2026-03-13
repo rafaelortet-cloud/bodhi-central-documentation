@@ -11,7 +11,7 @@ export const metadata = {
 const banner = <Banner storageKey="bodhi-central-1.0-in-development"><a href="https://bodhi-central.vercel.app">Bodhi Central 1.0 is in development 🎉</a></Banner>
 const navbar = (
     <Navbar
-        logo={<b>Bodhi Central</b>}
+        logo={<img style={{ width: '10rem' }} src="/bodhi-central-logo-social.png" alt="Bodhi Central logo" />}
     // ... Your additional navbar options
     />
 )
